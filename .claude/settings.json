@@ -1,0 +1,14 @@
+{
+  "projectId": "172b1340-94cc-4f3f-9808-616bca1a003c",
+  "webhookUrl": "https://vibestack-bdz9h5as6-vibe-stack-team.vercel.app/api/claude-code/progress",
+  "webhookSecret": "1eef562ab2307b335b6b47a0ad0368bb525f035cc29e39b23c8c4b20a73ac20d",
+  "hooks": {
+    "enabled": true,
+    "events": [
+      "SessionStart",
+      "SessionEnd",
+      "PreToolUse",
+      "PostToolUse"
+    ]
+  }
+}

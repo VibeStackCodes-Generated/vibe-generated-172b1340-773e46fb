@@ -36,3 +36,8 @@ build
 *_AUDIT*.md
 *AUDIT*.md
 PACKAGE_VERSIONS.txt
+claude-agent-runner.mjs
+read-stdout.mjs
+read-stderr.mjs
+verify.mjs
+
