@@ -6,6 +6,7 @@
 import { useState } from 'react'
 import { useMatching } from '@/hooks/useMatching'
 import { SAMPLE_INVOICES, SAMPLE_TRANSACTIONS } from '@/utils/sample-data'
+import { ReconciliationPanel } from '@/components/reconciliation-panel'
 import type { MatchingConfig } from '@/types/matching'
 
 function ConfidenceBar({ score, width = 'w-24' }: { score: number; width?: string }) {
@@ -387,6 +388,15 @@ export function MatchingDemo() {
               )
             })}
           </div>
+        </div>
+
+        {/* Reconciliation Actions Panel */}
+        <div className="rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-950">
+          <ReconciliationPanel
+            candidates={candidates}
+            invoices={SAMPLE_INVOICES}
+            transactions={SAMPLE_TRANSACTIONS}
+          />
         </div>
       </div>
     </div>
